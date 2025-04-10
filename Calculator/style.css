@@ -1,0 +1,84 @@
+:root {
+    --background-color: hsl(220, 10%, 15%);
+    --input-background-color: hsl(220, 10%, 20%);
+    --calculator-background-color: hsl(220, 10%, 25%);
+    --button-color: hsl(220, 10%, 30%);
+    --button-hover-color: hsl(220, 10%, 35%);
+    --button-active-color: hsl(220, 10%, 40%);
+    --text-color: hsl(0, 0%, 90%);
+    --equals-color: hsl(60, 100%, 50%); /* Yellow for equals button */
+    --equals-hover-color: hsl(60, 100%, 60%);
+    --equals-active-color: hsl(60, 100%, 40%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.input {
+    padding: 20px;
+    font-size: 4rem;
+    width: 351px;
+    border: none;
+    background-color: var(--input-background-color);
+    color: var(--text-color);
+    margin-top: 7px;
+    border-radius: 10px; 
+}
+
+.calculator {
+    background-color: var(--calculator-background-color);
+    border-radius: 15px;
+    max-width: 450px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    color: var(--text-color);
+    border: none;
+    border-radius: 50px;
+    background-color: var(--button-color);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+button:active {
+    background-color: var(--button-active-color);
+}
+.equals-button {
+    background-color: var(--equals-color);
+    color: black;
+}
+
+.equals-button:hover {
+    background-color: var(--equals-hover-color);
+}
+
+.equals-button:active {
+    background-color: var(--equals-active-color);
+}
