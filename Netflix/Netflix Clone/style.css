@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/0552717c-9d8c-47bd-9640-4f4efa2de663/cc9ca4c0-cb83-4175-9a10-97d1a99a1e9a/PK-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_4a0aded4-19f1-4fd7-b6ba-f65282911095_small.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.main .box {
+    background-color: rgba(0, 0, 0, 0.68);
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    height: 62px;
+    padding: 12px 0px;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+div.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    z-index: 10;
+    text-align: center;
+}
+
+.hero > :first-child {
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.hero > :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.hero > :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+div.line {
+    background-color: grey;
+    height: 7px;
+    opacity: 0.44;
+}
+
+.btn {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 3px 8px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.btn-red {
+    font-size: 20px;
+    padding: 3px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.hero-butttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.main input {
+    font-size: 13px;
+    padding: 7px 100px 8px 14px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    font: 900;
+    border: 1px solid rgba(242, 242, 242, 0.4);
+}
+
+.lang {
+    background-color: rgba(248, 243, 243, 0.042);
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.638);
+}
+
+div.large-text {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+div.normal {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.ht {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: 55px auto;
+    color: white;
+    align-items: center;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg video {
+    position: absolute;
+    top: 95px;
+    right: 51px;
+    width: 450px;
+    height: 270px;
+}
+
+.secimg img {
+    width: 580px;
+    position: relative;
+    z-index: 10;
+}
+
+.img3 {
+    margin: 0 30px;
+}
+
+.faqs {
+    margin: 55px auto;
+    color: white;
+}
+
+.faqs h1 {
+    color: white;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.faqbox {
+    color: white;
+    width: 60%;
+    margin: 10px auto;
+    height: 75px;
+    background-color: rgb(52, 50, 50);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.faqbox:hover {
+    background-color: rgb(79, 74, 74);
+}
+
+div.lasttext {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 0px 0px 0px;
+}
+
+.subscribe input {
+    font-size: 13px;
+    padding: 7px 100px 8px 14px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    font: 900;
+    border: 1px solid rgba(242, 242, 242, 0.4);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    max-width: 60vw;
+    margin: 20px auto;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 13px;
+}
+
+footer a {
+    color: white;
+}
+
+footer span {
+    margin-top: 28px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 500px) {
+    .hero > :first-child {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .hero > :nth-child(2) {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .hero > :nth-child(3) {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .hero-butttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero-butttons input {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .hero-butttons button {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 90vw;
+    }
+
+    .ht {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    .secimg video {
+        width: 100%;
+        height: auto;
+        top: 50px;
+        right: 0;
+    }
+
+    .secimg img {
+        width: 100%;
+    }
+
+    .img3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        max-width: 90vw;
+    }
+
+    .footer-items {
+        text-align: center;
+    }
+    .large-text{
+        text-align: center;
+    }
+    .normal{
+        text-align:center
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav img {
+        width: 100px;
+    }
+
+    nav button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .btn-red {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .ht {
+        margin: 20px auto;
+    }
+
+    .faqs h1 {
+        font-size: 32px;
+    }
+
+    .faqbox {
+        width: 90%;
+        font-size: 18px;
+        height: 60px;
+    }
+
+    .subscribe input {
+        width: 80%;
+    }
+
+    .subscribe button {
+        width: 80%;
+    }
+
+    footer {
+        max-width: 90vw;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-items a {
+        font-size: 14px;
+    }
+}
