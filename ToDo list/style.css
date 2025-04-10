@@ -1,0 +1,142 @@
+:root {
+    --bg-gradient-start: #D5A6F0;
+    --bg-gradient-end: #F5F3C1;
+    --card-bg: #FFFFFF;
+    --card-border: #E5E7EB;
+    --button-bg: #F7C6C7;
+    --button-hover-bg: #F5A7A7;
+    --text-color: #333333;
+    --cursor-bg: #D556F5;
+    --span-hover-bg: #E7E5E5AC;
+    --checked-icon: url('checked.png');
+    --unchecked-icon: url('unchecked.png');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    padding: 10px;
+}
+
+.to-dolist {
+    width: 100%;
+    max-width: 540px;
+    margin: 50px auto 20px;
+    background-color: var(--card-bg);
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.to-dolist h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #A020F0;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.todorow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding-left: 20px;
+    background-color: var(--card-border);
+}
+
+.todorow input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 10px;
+    background: transparent;
+}
+
+.todorow button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 50px;
+    background-color: var(--button-bg);
+    border-radius: 1000px;
+    color: var(--card-bg);
+}
+
+.todorow button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    background: var(--unchecked-icon);
+    border-radius: 50%;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: var(--text-color);
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background: var(--checked-icon);
+    background-size: cover;
+    background-position: center;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: var(--span-hover-bg);
+    transition: 0.5s ease;
+}
+
+.cursor {
+    background-color: var(--cursor-bg);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.1s ease;
+    mix-blend-mode: normal;
+}
