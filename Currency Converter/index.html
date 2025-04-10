@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2c2b2b;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgb(255, 255, 255);
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            transition: transform 0.2s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .container h3 {
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .container select, 
+        .container input {
+            width: 85%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .container select:focus, 
+        .container input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        .rate {
+            margin-top: 20px;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        button {
+            margin: 20px 0;
+            padding: 15px;
+            color: white;
+            background-color: #007BFF;
+            width: 85%;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #004085;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Currency Converter</h2>
+            <h3>Enter Amount</h3>
+            <input type="text" placeholder="Enter value...">
+            <div class="from curr">
+                <h3>From</h3>
+                <select name="from" id="from">
+                    <option value="pkr">PKR</option>
+                    <option value="inr">INR</option>
+                    <option value="eur">EUR</option>
+                    <option value="usd">USD</option>
+                </select>
+            </div>
+            <div class="to curr">
+                <h3>To</h3>
+                <select name="to" id="to">
+                    <option value="pkr">PKR</option>
+                    <option value="inr">INR</option>
+                    <option value="eur">EUR</option>
+                    <option value="usd">USD</option>
+                </select>
+            </div>
+            <div class="rate">1 USD = 279 PKR</div>
+            <button>Get Rate</button>
+            <script src="index.js"></script>
+
+        </div>
+    </body>
+</html>
